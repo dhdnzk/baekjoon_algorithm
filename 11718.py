@@ -1,4 +1,6 @@
-str = input("");
-
-for i in range(0, len(str)):
-    print(str[i], end='');
+while True:
+    try:
+        str = input()
+        print(str, end="")
+    except EOFError:
+        break
