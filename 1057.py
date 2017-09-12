@@ -8,19 +8,20 @@ idx = 0
 cur_table = []
 while True:
 
+    player1 = 0
+    player2 = 0
+
     if table.__len__() > 0:
         player1 = table.pop(0)
     if table.__len__() > 0:
         player2 = table.pop(0)
+
     if player1 == player2 == 1:
         break
     elif player1 == 1 or player2 == 1:
         cur_table.append(1)
     else:
         cur_table.append(0)
-
-    player1 = 0
-    player2 = 0
 
     if table.__len__() == 0:
         table = cur_table
